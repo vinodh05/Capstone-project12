@@ -2,12 +2,12 @@ name: Project12 Terraform plan
 
 on:
   push:
-    branch:
+    branches:
       - main
 
 jobs:
   terraform-plan:
-    runs-on: ubuntu@latest
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
